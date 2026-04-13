@@ -1,6 +1,6 @@
 # CargoLedger Backend
 
-[![CI](https://github.com/CodeGirlsInc/CargoLedger/actions/workflows/ci.yml/badge.svg)](https://github.com/CodeGirlsInc/CargoLedger/actions/workflows/ci.yml)
+[![CI](https://github.com/Vera3289/cargoledger-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/Vera3289/cargoledger-backend/actions/workflows/ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 Express + TypeScript API for the **CargoLedger** decentralized logistics and freight management platform on the Stellar network.
@@ -50,7 +50,7 @@ CargoLedger aims to modernize traditional freight operations by incorporating bl
 
 ```bash
 # 1. Clone
-git clone https://github.com/CodeGirlsInc/CargoLedger.git
+git clone https://github.com/Vera3289/cargoledger-backend.git
 cd CargoLedger/backend
 
 # 2. Configure environment
@@ -506,8 +506,8 @@ scripts/
 
 ## Related Repositories
 
-- [cargoledger-frontend](https://github.com/CodeGirlsInc/CargoLedger/tree/main/frontend) — Dashboard and shipper UI
-- [cargoledger-contracts](https://github.com/CodeGirlsInc/CargoLedger/tree/main/contracts) — Soroban smart contracts
+- [cargoledger-frontend](https://github.com/Vera3289/cargoledger-backend/tree/main/frontend) — Dashboard and shipper UI
+- [cargoledger-contracts](https://github.com/Vera3289/cargoledger-backend/tree/main/contracts) — Soroban smart contracts
 
 ---
 
