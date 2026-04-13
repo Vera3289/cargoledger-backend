@@ -1,0 +1,64 @@
+{
+  "name": "cargoledger-backend",
+  "version": "1.0.0",
+  "description": "Express + TypeScript API for the CargoLedger decentralized logistics and freight management platform on Stellar",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest --runInBand --forceExit",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "typecheck": "tsc --noEmit",
+    "docker:build": "docker build -t cargoledger-backend:local .",
+    "docker:run": "docker run --rm -p 3000:3000 cargoledger-backend:local",
+    "docker:smoke": "bash scripts/smoke.sh",
+    "k6:smoke": "k6 run --env SCENARIO=smoke k6/main.js",
+    "k6:load": "k6 run --env SCENARIO=load k6/main.js",
+    "k6:stress": "k6 run --env SCENARIO=stress k6/main.js",
+    "k6:soak": "k6 run --env SCENARIO=soak k6/main.js"
+  },
+  "keywords": [
+    "stellar",
+    "freight",
+    "logistics",
+    "blockchain",
+    "web3",
+    "soroban",
+    "express",
+    "typescript",
+    "shipment",
+    "supply-chain"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "pg": "^8.11.3",
+    "uuid": "^9.0.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.5",
+    "@types/pg": "^8.11.0",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^9.0.7",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
